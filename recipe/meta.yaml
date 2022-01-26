@@ -11,18 +11,15 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - npe2 = npe2.cli:main
 
 requirements:
-  build:
-    - setuptools_scm
   host:
     - python >=3.7
     - pip
-    - setuptools_scm
   run:
     - python >=3.7
     - pyyaml
