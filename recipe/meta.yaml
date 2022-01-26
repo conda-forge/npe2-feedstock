@@ -17,9 +17,12 @@ build:
     - npe2 = npe2.cli:main
 
 requirements:
+  build:
+    - setuptools_scm
   host:
     - python >=3.7
     - pip
+    - setuptools_scm
   run:
     - python >=3.7
     - pyyaml
@@ -39,6 +42,7 @@ test:
     - pip
   commands:
     - pip check
+    - pip freeze
 
 about:
   home: https://github.com/napari/npe2
