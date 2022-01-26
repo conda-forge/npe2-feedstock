@@ -43,6 +43,7 @@ test:
   commands:
     - pip check
     - pip freeze
+    - pip list
 
 about:
   home: https://github.com/napari/npe2
