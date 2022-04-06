@@ -29,6 +29,7 @@ requirements:
     - napari-plugin-engine
     - psygnal
     - pydantic
+    - appdirs
     - pytomlpp
     - typer
     - importlib-metadata >=1.5.0  # not needed for py>37 but keeping for noarch
