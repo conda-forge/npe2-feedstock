@@ -1,5 +1,5 @@
 {% set name = "npe2" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 71b9b2b31dcc84591f1f604cd483209a5ef6de564bc579df0a71cb4da8f93b0a
+  sha256: 90c21d50e0e10cf6b4bd4930e10c066730335cdcac9cde9409aadcdb3612d50c
 
 build:
   noarch: python
@@ -29,6 +29,7 @@ requirements:
     - napari-plugin-engine
     - psygnal
     - pydantic
+    - appdirs
     - pytomlpp
     - typer
     - importlib-metadata >=1.5.0  # not needed for py>37 but keeping for noarch
