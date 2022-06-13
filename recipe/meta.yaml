@@ -1,5 +1,5 @@
 {% set name = "npe2" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 90c21d50e0e10cf6b4bd4930e10c066730335cdcac9cde9409aadcdb3612d50c
+  sha256: 68b09f1f168a65187530c122af4cab56d7311b67625bb8aba21389d89ddccc70
 
 build:
   noarch: python
@@ -18,21 +18,18 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - setuptools_scm
   run:
-    - python >=3.7
+    - python >=3.8
     - pyyaml
-    - intervaltree
     - magicgui >=0.3.3
-    - napari-plugin-engine
-    - psygnal
+    - psygnal >=0.3.0
     - pydantic
     - appdirs
     - pytomlpp
     - typer
-    - importlib-metadata >=1.5.0  # not needed for py>37 but keeping for noarch
 
 test:
   imports:
@@ -41,6 +38,7 @@ test:
     - pip
   commands:
     - pip check
+    - npe2 --help
 
 about:
   home: https://github.com/napari/npe2
