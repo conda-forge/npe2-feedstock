@@ -22,13 +22,14 @@ requirements:
     - pip
     - setuptools_scm
   run:
-    - python >=3.8
-    - pyyaml
+    - appdirs
+    - build
     - magicgui >=0.3.3
     - psygnal >=0.3.0
     - pydantic
-    - appdirs
+    - python >=3.8
     - pytomlpp
+    - pyyaml
     - typer
 
 test:
