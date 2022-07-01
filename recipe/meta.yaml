@@ -30,6 +30,7 @@ requirements:
     - python >=3.8
     - pytomlpp
     - pyyaml
+    - rich
     - typer
 
 test:
