@@ -28,7 +28,8 @@ requirements:
     - psygnal >=0.3.0
     - pydantic <2.0a0
     - python >=3.8
-    - pytomlpp
+    - tomli  # [py<311]
+    - tomli-w
     - pyyaml
     - rich
     - typer
