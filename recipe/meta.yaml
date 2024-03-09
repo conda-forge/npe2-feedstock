@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - npe2 = npe2.cli:main
@@ -26,7 +26,7 @@ requirements:
     - appdirs
     - python-build
     - psygnal >=0.3.0
-    - pydantic <2.0a0
+    - pydantic
     - python >=3.8
     - tomli
     - tomli-w
