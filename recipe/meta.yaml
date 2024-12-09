@@ -6,19 +6,19 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 8e5e3ef3b2ea020c9b8bb31c589148f0fd486779a939b52e4f3c7fea422a9136
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - npe2 = npe2.cli:main
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-vcs
@@ -27,7 +27,7 @@ requirements:
     - python-build
     - psygnal >=0.3.0
     - pydantic
-    - python >=3.8
+    - python >={{ python_min }}
     - tomli
     - tomli-w
     - pyyaml
@@ -39,6 +39,7 @@ test:
     - npe2
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
     - npe2 --help
