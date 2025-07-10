@@ -23,7 +23,7 @@ requirements:
     - hatchling
     - hatch-vcs
   run:
-    - appdirs
+    - platformdirs
     - python-build
     - psygnal >=0.3.0
     - pydantic
