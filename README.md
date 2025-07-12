@@ -149,6 +149,8 @@ Feedstock Maintainers
 
 * [@DragaDoncila](https://github.com/DragaDoncila/)
 * [@jni](https://github.com/jni/)
+* [@kephale](https://github.com/kephale/)
+* [@kevinyamauchi](https://github.com/kevinyamauchi/)
 * [@nclack](https://github.com/nclack/)
 * [@sofroniewn](https://github.com/sofroniewn/)
 
