@@ -27,7 +27,8 @@ requirements:
     - platformdirs
     - python-build
     - psygnal >=0.3.0
-    - pydantic
+    - pydantic >=1.0
+    - pydantic-extra-types
     - python >={{ python_min }}
     - tomli
     - tomli-w
