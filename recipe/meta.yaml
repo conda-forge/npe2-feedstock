@@ -21,7 +21,6 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - build
     - hatchling
     - hatch-vcs
   run:
@@ -41,6 +40,7 @@ test:
     - npe2
   requires:
     - pip
+    - build
     - python {{ python_min }}
   commands:
     - pip check
