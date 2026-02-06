@@ -41,7 +41,6 @@ test:
     - npe2
   requires:
     - pip
-    - build
     - python {{ python_min }}
   commands:
     - pip check
