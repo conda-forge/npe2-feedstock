@@ -24,17 +24,17 @@ requirements:
     - hatchling
     - hatch-vcs
   run:
-    - platformdirs
+    - platformdirs >=4.3.0
     - python-build
     - psygnal >=0.3.0
-    - pydantic >=1.0
-    - pydantic-extra-types
+    - pydantic >=2.8
+    - pydantic-extra-types >=2.8
     - python >={{ python_min }}
-    - tomli
-    - tomli-w
-    - pyyaml
-    - rich
-    - typer
+    - tomli >=2.0.2; python_version < "3.11"
+    - tomli-w >=1.0
+    - pyyaml >=6.0
+    - rich >=14.0.0
+    - typer >=0.15.4
 
 test:
   imports:
