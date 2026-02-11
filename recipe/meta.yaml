@@ -30,7 +30,7 @@ requirements:
     - pydantic >=2.8
     - pydantic-extra-types >=2.8
     - python >={{ python_min }}
-    - tomli >=2.0.2; python_version < "3.11"
+    - tomli >=2.0.2
     - tomli-w >=1.0
     - pyyaml >=6.0
     - rich >=14.0.0
