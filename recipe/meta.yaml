@@ -1,5 +1,5 @@
 {% set name = "npe2" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 51afd432e5b0b2833d5e7506205f1d54411d5e00c5c94bf75c368c10bb7dd3eb
+  sha256: a8f63efefcf67f5c839d5fa6abf7a1236a9ac47afb2eb756a97e7e661f8642a2
 
 build:
   noarch: python
