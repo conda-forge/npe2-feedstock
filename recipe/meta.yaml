@@ -1,14 +1,14 @@
 {% set name = "npe2" %}
-{% set version = "0.8.3" %}
-{% set python_min = "3.10" %}
+{% set version = "0.9.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a8f63efefcf67f5c839d5fa6abf7a1236a9ac47afb2eb756a97e7e661f8642a2
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 70014cad1b61c2defdf7b8ee19a1e047333368ec71dd8139a770bf062afeeff3
 
 build:
   noarch: python
