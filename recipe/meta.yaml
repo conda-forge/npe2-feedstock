@@ -57,6 +57,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - conda-forge/napari
     - czaki
     - kevinyamauchi
     - kephale
