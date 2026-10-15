@@ -1,5 +1,5 @@
 {% set name = "npe2" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 70014cad1b61c2defdf7b8ee19a1e047333368ec71dd8139a770bf062afeeff3
+  sha256: 1fbfaae84fa6696eceb6c1061274e36215bacafd1564c1bbe928e89a8d59e7c9
 
 build:
   noarch: python
