@@ -1,5 +1,6 @@
 {% set name = "npe2" %}
 {% set version = "0.10.1" %}
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
